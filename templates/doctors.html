@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+
+{% block title %}Doctors{% endblock %}
+
+{% block content %}
+<section class="doctors-page py-5">
+    <div class="container">
+        <div class="doctors-hero text-center mx-auto mb-5">
+            <span class="doctors-eyebrow">Medical Experts</span>
+            <h1 class="display-5 fw-bold mt-3">Meet Our Doctors</h1>
+            <p class="lead text-muted mb-0">
+                Experienced specialists committed to compassionate care, precise diagnosis, and better patient outcomes.
+            </p>
+        </div>
+
+        <div class="row g-4">
+            {% for d in doctors %}
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card doctor-card border-0 h-100">
+                        <div class="doctor-image-wrap">
+                            <img src="{{ d.doc_img.url }}" class="card-img-top doctor-image" alt="Dr. {{ d.doc_name }}">
+                        </div>
+                        <div class="card-body text-center p-4">
+                            <span class="doctor-department">{{ d.doc_dep }} Department</span>
+                            <h5 class="card-title mt-3 mb-2">Dr. {{ d.doc_name }}</h5>
+                            <p class="card-text text-muted mb-0">{{ d.doc_spec }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% endblock %}

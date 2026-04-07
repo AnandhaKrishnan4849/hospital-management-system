@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% block title %}Booking{% endblock %}
+
+{% block content %}
+<section class="booking-page py-5">
+    <div class="container">
+        <div class="booking-hero text-center mx-auto mb-5">
+            <span class="booking-eyebrow">Appointment Desk</span>
+            <h1 class="display-5 fw-bold mt-3">Book Your Visit</h1>
+            <p class="lead text-muted mb-0">
+                Schedule a consultation with our specialists in just a few steps. We will help you find the right care at the right time.
+            </p>
+        </div>
+
+        <div class="booking-card mx-auto">
+            <div class="row g-0">
+                <div class="col-lg-5 booking-info">
+                    <h3 class="fw-bold mb-3">Why book with City Hospital?</h3>
+                    <p class="mb-4">
+                        Fast scheduling, experienced doctors, and patient-first support designed to make your hospital visit smooth and stress-free.
+                    </p>
+                    <div class="booking-feature">
+                        <i class="fas fa-user-md"></i>
+                        <span>Consult with trusted specialists</span>
+                    </div>
+                    <div class="booking-feature">
+                        <i class="fas fa-clock"></i>
+                        <span>Quick and convenient appointment slots</span>
+                    </div>
+                    <div class="booking-feature">
+                        <i class="fas fa-hospital-user"></i>
+                        <span>Personalized care from check-in to treatment</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="booking-form-wrap">
+                        <h4 class="fw-semibold mb-4">Appointment Form</h4>
+                        <form action="" method="POST">
+                            {% csrf_token %}
+                            {{ form|crispy }}
+                            <button class="btn btn-primary booking-submit mt-3" type="submit">Confirm Appointment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

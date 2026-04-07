@@ -1,0 +1,224 @@
+li:hover{
+    background-color: #afafaf;
+    border-radius: 5px;
+    border: 1px solid rgb(211, 211, 211);
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    padding: 60px 0;
+}
+
+/* Carousel styling */
+.carousel-item img {
+    height: 70vh;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background: transparent !important;
+    background-color: transparent !important;
+    border-radius: 0;
+    box-shadow: none !important;
+    padding: 0;
+    bottom: 20%;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+}
+
+/* Service cards */
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15) !important;
+}
+
+/* Welcome section cards */
+.bg-light .card {
+    transition: transform 0.3s ease;
+}
+
+.bg-light .card:hover {
+    transform: translateY(-2px);
+}
+
+/* Call to action buttons */
+.btn {
+    border-radius: 25px;
+    padding: 12px 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Navigation improvements */
+.navbar-brand {
+    font-size: 1.5rem !important;
+}
+
+.nav-link {
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: rgba(255,255,255,0.8) !important;
+}
+
+/* Footer improvements */
+footer a {
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: rgba(255,255,255,0.8) !important;
+}
+
+/* Doctors page */
+.doctors-page {
+    background: linear-gradient(180deg, #f5fbff 0%, #ffffff 45%, #eef7ff 100%);
+}
+
+.doctors-hero {
+    max-width: 720px;
+}
+
+.doctors-eyebrow {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 999px;
+    background: rgba(13, 110, 253, 0.1);
+    color: #0d6efd;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.doctor-card {
+    overflow: hidden;
+    border-radius: 24px;
+    background: #ffffff;
+    box-shadow: 0 14px 35px rgba(15, 54, 92, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.doctor-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(15, 54, 92, 0.18);
+}
+
+.doctor-image-wrap {
+    height: 320px;
+    overflow: hidden;
+    background: linear-gradient(180deg, #dcefff 0%, #f8fbff 100%);
+}
+
+.doctor-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.doctor-card:hover .doctor-image {
+    transform: scale(1.05);
+}
+
+.doctor-department {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background-color: #eaf4ff;
+    color: #0b5ed7;
+    font-size: 0.82rem;
+    font-weight: 600;
+}
+
+/* Booking page */
+.booking-page {
+    background: linear-gradient(180deg, #f7fbff 0%, #eef6ff 100%);
+}
+
+.booking-hero {
+    max-width: 760px;
+}
+
+.booking-eyebrow {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 999px;
+    background: rgba(13, 110, 253, 0.1);
+    color: #0d6efd;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.booking-card {
+    max-width: 1100px;
+    overflow: hidden;
+    border-radius: 28px;
+    background: #ffffff;
+    box-shadow: 0 18px 45px rgba(17, 63, 103, 0.12);
+}
+
+.booking-info {
+    padding: 48px 36px;
+    background: linear-gradient(160deg, #0d6efd 0%, #0a58ca 100%);
+    color: #ffffff;
+}
+
+.booking-feature {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 18px;
+    padding: 14px 16px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.booking-feature i {
+    font-size: 1.1rem;
+}
+
+.booking-form-wrap {
+    padding: 48px 36px;
+}
+
+.booking-form-wrap .form-control,
+.booking-form-wrap .form-select,
+.booking-form-wrap textarea {
+    border-radius: 14px;
+    padding: 12px 16px;
+    border: 1px solid #d6e4f5;
+    box-shadow: none;
+}
+
+.booking-form-wrap .form-control:focus,
+.booking-form-wrap .form-select:focus,
+.booking-form-wrap textarea:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.12);
+}
+
+.booking-submit {
+    min-width: 220px;
+}
+
+@media (max-width: 991.98px) {
+    .booking-info,
+    .booking-form-wrap {
+        padding: 32px 24px;
+    }
+}
